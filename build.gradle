@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-neo4j:2.5.5'
+    compile 'org.projectlombok:lombok:1.18.20'
+    testCompile 'org.neo4j.test:neo4j-harness:3.5.23'
+    testCompile 'org.springframework.boot:spring-boot-starter-test:2.5.5'
+    testCompile 'org.sonatype.sisu:sisu-inject-bean:1.4.2'
+    testImplementation "org.mockito:mockito-core"
+    testImplementation "org.mockito:mockito-junit-jupiter"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}

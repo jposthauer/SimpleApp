@@ -1,0 +1,92 @@
+### Java
+### Java
+### ----
+
+*.class
+*.jar
+!gradle-wrapper.jar
+.gradle/
+gradle-local.properties
+hs_err_pid*
+
+pitest/
+pitest.tar.gz
+*.idea/*
+!.idea/runConfigurations
+*/.idea/*
+!.idea/runConfigurations
+generated/
+scripts/build
+api/doc/
+docs/
+reports/
+build/
+*/build/
+common/*/build/
+client/e2e-reports/
+postman/*api-endpoints.json
+
+out/
+*.iml
+
+### DOCKER
+### ------
+
+docker-compose.yml
+docker-new/logs
+
+### OTHER
+### -----
+
+*.swp
+*.DS_Store
+*.ldif
+*.org
+.env
+
+### NEO4J
+### -----
+
+docker/*.env
+docker/neo4j
+
+### CLIENT
+### ------
+
+bower_components/
+node_modules/
+dist/
+dist-storybook/
+.sass_cache/
+.tmp/
+npm-debug.log
+
+client/coverage
+client/reports/*
+client/e2e/dist/
+client/e2e/dist/*
+!client/e2e/*
+client/e2e/*.DS_Store
+client/e2e/reports/
+client/credentials-e2e/
+client/credentials-e2e
+client/anti-virus-no-opping.txt
+client/anti-virus-triggering.txt
+client/logs/
+client/e2esso/dist
+client/e2esso/reports
+client/storybook-static
+
+### TEST
+### ---
+
+test/reports
+test/.env
+test/.venv
+.venv
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
